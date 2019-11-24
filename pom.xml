@@ -70,6 +70,12 @@ vax.servlet-api -->
     <artifactId>spring-context</artifactId>
     <version>5.2.1.RELEASE</version>
 </dependency>
+
+<dependency>  
+    <groupId>org.springframework</groupId>  
+    <artifactId>spring-jdbc</artifactId>  
+    <version>5.1.1.RELEASE</version>  
+</dependency>
  
     
     
