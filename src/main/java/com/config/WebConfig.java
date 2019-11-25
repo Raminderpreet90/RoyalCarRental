@@ -16,6 +16,9 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
+import com.dao.CarDao;
+import com.dao.CarDaoImpl;
+
 
 @Configuration 
 @EnableWebMvc
@@ -50,9 +53,13 @@ public class WebConfig implements WebMvcConfigurer{
 		ds.setDriverClassName("com.mysql.jdbc.Driver");
 		ds.setUrl("jdbc:mysql://localhost:3306/royalcarrent");
 		ds.setUsername("root");
-		ds.setPassword("");
+		ds.setPassword("rimmi");
 
 		return ds;
+	}
+	@Bean
+	public CarDao getCarDao() {
+		return new CarDaoImpl(getDataSource());
 	}
 
 }

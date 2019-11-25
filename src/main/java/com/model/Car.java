@@ -2,15 +2,15 @@ package com.model;
 
 public class Car {
 	
-	private int carId;
+	private int id;
 	private String carModel;
 	private String carRegno;
 	private int carRate;
 	public int getCarId() {
-		return carId;
+		return id;
 	}
-	public void setCarId(int carId) {
-		this.carId = carId;
+	public void setCarId(int id) {
+		this.id = id;
 	}
 	public String getCarModel() {
 		return carModel;
@@ -30,9 +30,9 @@ public class Car {
 	public void setCarRate(int carRate) {
 		this.carRate = carRate;
 	}
-	public Car(int carId, String carModel, String carRegno, int carRate) {
+	public Car(int id, String carModel, String carRegno, int carRate) {
 		super();
-		this.carId = carId;
+		this.id = id;
 		this.carModel = carModel;
 		this.carRegno = carRegno;
 		this.carRate = carRate;
