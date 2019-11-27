@@ -1,26 +1,22 @@
 <html>
 <body>
 <div align="center">
-<h2>Register first</h2>
+<h2>Welcome Admin To add Cars </h2>
 
 
- <form action="http://localhost:8080/RoyalCarRent/Register">
- 
+ <form action="create" method="post">
 <pre>
-Name :    <input type ="text" name="user_name" placeholder="Enter your user name" required>
 
-Password: <input type ="password" name="user_password" placeholder="Enter password" required>
+<strong>Create Here | <a href="./read">Click for Read</a></strong>
+    CarModel:            <input type="text" name="carModel" />
+	
+	CarRegistrationNumber: <input type="text" name="carRegno" />
+	
+	CarRate:              <input type="text" name="carRate" />
 
-Email:    <input type ="email" name="user_email" placeholder="Enter your email" required>
+	           <input type="submit" value="Create" />
 
-Address:  <input type ="text" name="user_address" placeholder="Enter your address" required>
-
-          <input type ="Submit" value="Sign up"> 
-            
-          
 </pre>
-
-
 </form>
 </div>
 </body>
