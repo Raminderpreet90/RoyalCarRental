@@ -33,10 +33,10 @@ public class WebConfig implements WebMvcConfigurer{
 	  return new NamedParameterJdbcTemplate(dataSource);
 	 }
 	
-	@Override
-	 public void addResourceHandlers(ResourceHandlerRegistry registry) {
+	public void addResourceHandlers(ResourceHandlerRegistry registry) {
 	  registry.addResourceHandler("/resources/**").addResourceLocations("/resources/");
 	 }
+	
 	@Bean
 	public InternalResourceViewResolver resolver() {
 		InternalResourceViewResolver resolver = new InternalResourceViewResolver();
@@ -57,9 +57,12 @@ public class WebConfig implements WebMvcConfigurer{
 
 		return ds;
 	}
+	
 	@Bean
 	public CarDao getCarDao() {
 		return new CarDaoImpl(getDataSource());
 	}
+	
+	
 
 }
