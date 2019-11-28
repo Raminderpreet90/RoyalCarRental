@@ -31,12 +31,7 @@
 			<version>5.1.26</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/net.sf.ucanaccess/ucanaccess -->
-		<dependency>
-			<groupId>net.sf.ucanaccess</groupId>
-			<artifactId>ucanaccess</artifactId>
-			<version>4.0.4</version>
-		</dependency>
+		
 
 
 
