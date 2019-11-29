@@ -1,3 +1,7 @@
+<%@ page import = "java.io.*,java.util.*,java.sql.*"%>
+<%@ page import = "javax.servlet.http.*,javax.servlet.*" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix = "c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix = "sql"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -7,9 +11,8 @@
 <meta http-equiv="Content-Type" content="text/html;
 charset=ISO-8859-1">
 <title>javaguides.net</title>
-<link href="<c:url
-value="/resources/css/bootstrap.min.css" />"
-	rel="stylesheet">
+<link href="<c:url 
+value="/resources/css/bootstrap.min.css" />"rel="stylesheet">
 <script src="<c:url value="/resources/js/jquery1.11.1.min.js" />"></script>
 <script src="<c:url
 value="/resources/js/bootstrap.min.js" />"></script>
@@ -17,6 +20,15 @@ value="/resources/js/bootstrap.min.js" />"></script>
 <title>Sign Up Successfully</title>
 </head>
 <body>
+<sql:setDataSource var = "snapshot" driver = "com.mysql.jdbc.Driver"
+         url = "jdbc:mysql://localhost:3306/royal-car-rental"
+         user = "root"  password = "rimmi"/>
+        
+         <sql:update dataSource = "${snapshot}" var = "result">
+        INSERT INTO user_register VALUES ( '${user.email}','${user.firstName}', '${user.lastName}','${user.userName}','${user.password}');
+      </sql:update>
+     
+     
 <div class="container">
 		<div class="col-md-offset-2 col-md-7">
 			<h1>${message}</h1>
@@ -33,6 +45,9 @@ value="/resources/js/bootstrap.min.js" />"></script>
 				</tr>
 				<tr>
 					<td><b>Email </b>: ${user.email}</td>
+				</tr>
+				<tr>
+					<td><b>password </b>: ${user.password}</td>
 				</tr>
 			</table>
 		</div>
