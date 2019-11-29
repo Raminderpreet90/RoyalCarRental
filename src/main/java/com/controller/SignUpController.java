@@ -20,6 +20,7 @@ public class SignUpController {
 	 *
 	 * @return
 	 */
+	
 	@ModelAttribute("signUpForm")
 	public SignUpForm setSignUpForm() 
 	{
@@ -36,6 +37,10 @@ public class SignUpController {
 		return "signup-form";
 	}
 
+	@GetMapping("/showSignInForm")
+	public String showForm1() {
+		return "form";
+	}
 	/**
 	 * Save User sign up form
 	 *
@@ -47,7 +52,7 @@ public class SignUpController {
 	public String saveUser(@ModelAttribute("signUpForm") SignUpForm signUpForm, Model model) {
 // Implement business logic to save userdetails into a database
 // .....
-		System.out.println("FirstName : " + signUpForm.getFirstName());
+		System.out.println("FirstName --- : " + signUpForm.getFirstName());
 		System.out.println("LastName : " + signUpForm.getLastName());
 		System.out.println("Username : " + signUpForm.getUserName());
 		System.out.println("Password : " + signUpForm.getPassword());
@@ -55,6 +60,19 @@ public class SignUpController {
 		model.addAttribute("message", "User SignUp successfully.");
 		model.addAttribute("user",signUpForm);
 		return "signup-success";
+	}
+	
+	
+	
+	@PostMapping("/Home")
+	public String validateUser(@ModelAttribute("signUpForm") SignUpForm signUpForm, Model model) {
+// Implement business logic to save userdetails into a database
+// ..... 
+		System.out.println("Username : " + signUpForm.getUserName());
+		System.out.println("Password : " + signUpForm.getPassword());
+		model.addAttribute("message", "User SignUp successfully."); 
+		model.addAttribute("user",signUpForm);
+		return "Home";
 	}
 
 }
