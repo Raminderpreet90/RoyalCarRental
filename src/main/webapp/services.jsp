@@ -21,10 +21,10 @@
 		</div>
 		<div class="rightMenu">
 <ul id="ul1">
-		<a href="Home.jsp"><li>HOME</li></a>
+	
 		<a href="services.jsp"><li>SERVICES</li></a>
 		<a href="aboutUs.jsp"><li>ABOUT US</li></a>
-		<a href="AvailableCars.jsp"><li>AVAILABLE CAR LIST </li></a>
+	
 		<a href="account.jsp"><li>ACCOUNT</li></a>
  </ul>
 		</div>  
