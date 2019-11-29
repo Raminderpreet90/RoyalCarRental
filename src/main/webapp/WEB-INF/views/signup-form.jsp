@@ -31,7 +31,7 @@ value="/resources/js/bootstrap.min.js" />"></script>
 				</div>
 				<div class="panel-body">
 					<form:form action="saveSignUpForm" cssClass="formhorizontal"
-						method="post" modelAttribute="signUpForm">
+						method="post" modelAttribute="signUpForm" >
 						<div class="form-group">
 							<label for="firstname" class="col-md-3 controllabel">First
 								Name</label>
