@@ -1,6 +1,7 @@
 package com.config;
 
 
+
 import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,12 @@ import org.springframework.web.servlet.view.JstlView;
 
 import com.dao.CarDao;
 import com.dao.CarDaoImpl;
+import com.model.Car;
+
+//import com.dao.CarDao;
+//import com.dao.CarDaoImpl;
+
+
 
 
 @Configuration 
@@ -48,15 +55,19 @@ public class WebConfig implements WebMvcConfigurer{
 	
 	
 	@Bean
-	DriverManagerDataSource getDataSource() {
+	public DataSource getDataSource()
+	{
+	
 		DriverManagerDataSource ds = new DriverManagerDataSource();
 		ds.setDriverClassName("com.mysql.jdbc.Driver");
-		ds.setUrl("jdbc:mysql://localhost:3306/royalcarrent");
+		ds.setUrl("jdbc:mysql://localhost:3306/royal-car-rental");
 		ds.setUsername("root");
 		ds.setPassword("rimmi");
 
 		return ds;
 	}
+	
+	
 	
 	@Bean
 	public CarDao getCarDao() {
