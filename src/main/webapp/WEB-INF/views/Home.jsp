@@ -52,16 +52,11 @@ value="/resources/js/bootstrap.min.js" />"></script>
 			<div class="rightMenu">
 				<ul id="ul">
 
-					<a href="Home.jsp"><li>HOME</li></a>
-					<a href="services.jsp"><li>SERVICES</li></a>
-					<a href="aboutUs.jsp"><li>ABOUT US</li></a>
-					<a href="account.jsp"><li>ACCOUNT</li></a>
-
 				</ul>
 			</div>
 		</div>
 		<div class="TextPara">
-
+           <h1>Welcome User</h1>
 			<h4>Branded-Cost Effective-Attractive look</h4>
 			<h1>JOIN OUR COMPANY TO BUY LUXURY CARS</h1>
 
