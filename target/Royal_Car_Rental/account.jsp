@@ -21,10 +21,10 @@
 			
 			<div class="rightMenu">
 				<ul id="ul1">
-					<a href="Home.jsp"><li>HOME</li></a>
+			
 					<a href="services.jsp"><li>SERVICES</li></a>
 					<a href="aboutUs.jsp"><li>ABOUT US</li></a>
-					<a href="AvailableCars.jsp"><li>AVAILABLE CAR LIST </li></a>
+					
 					<a href="account.jsp"><li>ACCOUNT</li></a>
 				</ul>
 			</div>
@@ -32,7 +32,7 @@
 		<div class="TextPara">
 		
 			<h4>CREATE ACCOUNT</h4>
-			<button id="btn1"><a href="form.jsp">USER LOGIN</a></button>
+			<button id="btn1"><a href="showSignInForm">USER LOGIN</a></button>
 			<button id="btn2"><a href="adminlogin.html">ADMIN LOGIN</button>
 			<br><br>
 			
