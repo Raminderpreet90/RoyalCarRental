@@ -22,7 +22,7 @@ value="/resources/js/bootstrap.min.js" />"></script>
 				Sign In Form</h2>
 			<div class="panel panel-info">
 				<div class="panel-heading">
-					<div class="panel-title">Sign Up</div>
+					<div class="panel-title">Sign In</div>
 				</div>
 				<div class="panel-body">
 	<form:form method="post" action="Home" modelAttribute="signUpForm" cssClass="formhorizontal">
