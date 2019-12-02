@@ -16,10 +16,6 @@ public interface CarDao {
 	public int update(Car car);
 
 	public int delete(int id);
-
-
-	
-	
 	
 
 }
