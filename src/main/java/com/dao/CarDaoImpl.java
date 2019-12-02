@@ -18,9 +18,8 @@ public class CarDaoImpl implements CarDao{
 		this.jdbcTemplate = new JdbcTemplate(dataSoruce);
 	}
 
-	@Override
 	public int create(Car car) {
-		String sql = "insert into car(id,car_Model,car_Regno,car_Rate) values(?,?,?,?)";
+		String sql = "INSERT INTO CAR(id,car_Model,car_Regno,car_Rate) values(?,?,?,?)";
 		try {
 
 			int counter = jdbcTemplate.update(sql,
@@ -36,7 +35,6 @@ public class CarDaoImpl implements CarDao{
 		}
 	}
 
-	@Override
 	public List<Car> read() {
 		List<Car> carList = jdbcTemplate.query("SELECT * FROM CAR", new RowMapper<Car>() 
 		{
@@ -53,7 +51,6 @@ public class CarDaoImpl implements CarDao{
 		return carList;
 	}
 
-	@Override
 	public List<Car> findStudentById(int id) {
 
 		List<Car> carList = jdbcTemplate.query("SELECT * FROM CAR where id=?",
@@ -75,11 +72,10 @@ public class CarDaoImpl implements CarDao{
 		return carList;
 	}
 
-	@Override
 	public int update(Car car) {
 		// TODO Auto-generated method stub
 		
-				String sql = "update  car set id=?, car_Model=?, car_Regno=? where car_Rate=?";
+				String sql = "UPDATE CAR SET id=?, car_Model=?, car_Regno=? WHERE car_Rate=?";
 				try {
 
 					int counter = jdbcTemplate.update(sql,
@@ -93,10 +89,9 @@ public class CarDaoImpl implements CarDao{
 				}
 	}
 
-	@Override
 	public int delete(int id) {
 		// TODO Auto-generated method stub
-		String sql = "delete from car where id=?";
+		String sql = "DELETE FROM CAR WHERE id=?";
 
 		try {
 
