@@ -1,7 +1,7 @@
 <html>
 <body>
 <div align="center">
-<h2>Welcome Admin To add Cars </h2>
+<h2>Welcome to Royal Car Rental  </h2>
 
 
  <form action="">
