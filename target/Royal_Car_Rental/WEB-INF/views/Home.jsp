@@ -68,12 +68,7 @@ value="/resources/js/bootstrap.min.js" />"></script>
 			
 			
 	      
-		</div>
-
-
+</div>
 	</div>
-
-
-
 </body>
 </html>
