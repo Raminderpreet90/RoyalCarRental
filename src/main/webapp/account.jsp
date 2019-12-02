@@ -33,7 +33,7 @@
 		
 			<h4>CREATE ACCOUNT</h4>
 			<button id="btn1"><a href="showSignInForm">USER LOGIN</a></button>
-			<button id="btn2"><a href="adminlogin.html">ADMIN LOGIN</button>
+			<button id="btn2"><a href="AdminLogin.jsp">ADMIN LOGIN</button>
 			<br><br>
 			
 			

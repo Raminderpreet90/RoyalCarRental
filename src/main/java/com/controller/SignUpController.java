@@ -9,10 +9,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import com.model.SignUpForm;
 
-
-
-
-
 @Controller
 public class SignUpController {
 	/**

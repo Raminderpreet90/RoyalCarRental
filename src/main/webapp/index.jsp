@@ -7,7 +7,7 @@
  <form action="">
 <pre>
 
-Hello World 
+<a href="http://localhost:8080/Royal_Car_Rental/account.jsp">Visit our Website</a>
 
 </pre>
 </form>
